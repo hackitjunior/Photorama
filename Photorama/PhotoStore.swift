@@ -23,6 +23,7 @@ class PhotoStore{
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request){
             (data, response, error) in
+            self.logResponseInfo(for: response)
             let result = self.processPhotosRequest(data: data, error: error)
             
             OperationQueue.main.addOperation {
@@ -51,6 +52,7 @@ class PhotoStore{
         
         let task = session.dataTask(with: request){
             (data, response, error) in
+            self.logResponseInfo(for: response)
             let result = self.processImageRequest(data: data, error: error)
             OperationQueue.main.addOperation {
                 completion(result)
@@ -70,5 +72,15 @@ class PhotoStore{
         }
         
         return .success(image)
+    }
+    
+    private func logResponseInfo(for response: URLResponse?){
+        if let response = response as? HTTPURLResponse {
+            print("****************************")
+            print("Response status code: \(response.statusCode)")
+            for(header, value) in response.allHeaderFields {
+                print("\(header): \(value)")
+            }
+        }
     }
 }
