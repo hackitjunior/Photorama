@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F21E14672678F4D7002FB830 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E14662678F4D7002FB830 /* ImageStore.swift */; };
+		F21E146C2678F637002FB830 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E146B2678F637002FB830 /* PhotoInfoViewController.swift */; };
 		F26143A42673E10B00BE7A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26143A32673E10B00BE7A40 /* AppDelegate.swift */; };
 		F26143A62673E10B00BE7A40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26143A52673E10B00BE7A40 /* SceneDelegate.swift */; };
 		F26143A82673E10B00BE7A40 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26143A72673E10B00BE7A40 /* PhotosViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		F21E14662678F4D7002FB830 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		F21E146B2678F637002FB830 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 		F26143A02673E10B00BE7A40 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26143A32673E10B00BE7A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26143A52673E10B00BE7A40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				F26143E32673E88700BE7A40 /* Photo.swift */,
 				F298AEBB2677C50F00BA62D3 /* PhotoDataSource.swift */,
 				F298AEC02677C90D00BA62D3 /* PhotoCollectionViewCell.swift */,
+				F21E146B2678F637002FB830 /* PhotoInfoViewController.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26143E42673E88700BE7A40 /* Photo.swift in Sources */,
+				F21E146C2678F637002FB830 /* PhotoInfoViewController.swift in Sources */,
 				F298AEC12677C90D00BA62D3 /* PhotoCollectionViewCell.swift in Sources */,
 				F298AEBC2677C50F00BA62D3 /* PhotoDataSource.swift in Sources */,
 				F26143DF2673E59100BE7A40 /* PhotoStore.swift in Sources */,
