@@ -20,6 +20,7 @@ class PhotoInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.accessibilityLabel = photo.title
         
         store.fecthImage(for: photo){(result) -> Void in
             
